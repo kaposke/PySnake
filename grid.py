@@ -44,7 +44,7 @@ class Grid:
     def is_inside(self, position):
         x, y = position
         width, height = self.resolution
-        return x >= 0 and x < width and y >= 0 and y < height
+        return x >= 0 and x <= width and y >= 0 and y <= height
 
     def restart(self):
         x, y = self.resolution
